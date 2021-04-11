@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo formulario</title>
+</head>
+<body>
+    <div>
+        <form class="formulario" method="post" id="form">
+
+          <h3>Formulario de información personal</h3>
+          
+          <input class="entradas" placeholder="Nombre" id="Nombre"  type="text" ><br />
+          
+          <input class="entradas" id="Apellido" placeholder="Apellido"  type="text" ><br />
+
+          
+          <input class="entradas" id="Email" placeholder="Email"  type="email" ><br />
+
+          
+          <input class="entradas" id="Celular" placeholder="Celular"  type="number" ><br />
+
+          <input class="entradas"  id="Cedula" placeholder="Cedula"  type="text" > <br />
+
+          
+          <input class="entradas" id="Carrera" placeholder="Carrera"  type="text" ><br />
+           
+       
+          <label>Fecha de nacimiento</label>
+          <input placeholder="fecha de nacimiento"  type="date" required><br />
+          <br />
+  
+          <label>Colores primarios favoritos:</label><br />
+          <input type="checkbox" name="color" >rojo<br />
+          <input type="checkbox" name="color" >amarillo<br />
+          <input type="checkbox" name="color" >verde <br>
+          <input type="checkbox" name="color" >azul <br />
+          <br />
+
+          <label>Sexo:</label><br />
+        	<input type="radio" name="sexo" required>Masculino<br />
+	        <input type="radio" name="sexo" required>Femenino <br />
+	        <input type="radio" name="sexo" required>Otro <br />
+          <br />
+
+          <p>Ciudad donde estudias</p>
+
+          	<select class="entradas" name="ciudad">
+	          	<option>Barranquilla</option>
+	          	<option>Bogotá </option>
+	          	<option>Cali</option>
+	          	<option>Cauca</option>
+              <option>Nariño</option>
+              <option>Manizales</option>
+              <option>Medellin</option>
+              <option>Otro</option>
+	         </select> <br />
+
+           <br />
+          <textarea class="entradas" rows="12" cols="24" name="comments">Describete como persona...</textarea><br />
+
+          
+
+          <button type="submit">Enviar formulario</button>
+        </form>
+        
+      </div>
+      <script src="validacion.js"></script>
+      
+</body>
+</html>
